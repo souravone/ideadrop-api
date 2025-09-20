@@ -14,7 +14,10 @@ const app = express();
 
 connectDB();
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://ideadrop-ui-mu.vercel.app/",
+];
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
